@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="box">
+      <h1>My Happy Form</h1>
+      <form id="form-control" class="form-control">
+        <div class="name-input">
+          <input type="text" name="first-name" id="first-name-input" placeholder="First Name" required />
+          <input type="text" name="last-name" id="last-name-input" placeholder="Last Name" required />
+        </div>
+        <textarea name="comments" id="comments" required></textarea>
+        <div class="newsletter">
+          <label for="newsletter__checkbox">Subscribe to newsletter</label>
+          <input type="checkbox" name="newsletter-checkbox" id="newsletter__checkbox" />
+          <div class="email">
+            <input type="email" name="email" id="email-input" placeholder="Enter your email" />
+          </div>
+        </div>
+        <button type="submit" id="submit-btn" disabled>Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

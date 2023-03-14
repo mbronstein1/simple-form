@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.box {
+  border: solid black 1px;
+  width: 50%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.form-control > * {
+  margin-block: 10px;
+}
+
+.email {
+  display: none;
+}

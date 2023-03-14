@@ -38,7 +38,7 @@ const formValidationHandler = () => {
     isSubscribed = true;
   }
 
-  if (emailInputEl.value.trim() !== '' && emailInputEl.value.includes('@', '.')) {
+  if (emailInputEl.value.match(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)) {
     isValidEmail = true;
   }
 
@@ -94,7 +94,7 @@ const submitFormHandler = async e => {
       pElement.style.color = 'red';
     }
   } else {
-    pElement.innerHTML = 'Please fill out all form fields';
+    pElement.innerHTML = 'Please fill out all form fields with valid information';
     pElement.style.color = 'red';
   }
 

@@ -4,6 +4,8 @@ A simple form component built with vanilla JavaScript. Challenged posted by Bria
 
 Includes conditional rendering, validation, and form submission feedback.
 
+Manually manipulating attributes in the Developer Console like changing `email` input type to text or removing `required` fields will still cause the form to not submit if the necessary information is not present due to validation handled in the JavaScript, instead of just relying on the browser.
+
 ## Live Link
 
 [Live Link](https://mbronstein1.github.io/simple-form/)
